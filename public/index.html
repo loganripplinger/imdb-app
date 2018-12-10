@@ -1,0 +1,30 @@
+<html>
+
+<head>
+	<title>Express</title>
+	<link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+	<h1>IMDB query app</h1>
+	<h2>Routes:</h2>
+
+	<h3>Year</h3>
+	<p><a href='/movies/year/1991'>/movies/year/1991</a></p>
+	<p>NOTE: This will return results of movies that <em>began on or before</em> the provided year AND <em>finished on or after</em> the provided year.</p>
+
+	<h3>Genre and filters</h3>
+	<p><a href='/movies/genre/comedy?year=2006'>/movies/genre/comedy?year=2006</a></p>
+
+	<h3>Sorting</h3>
+  	<p><a href='/movies/genre/documentary?sort=rating'>/movies/genre/documentary?sort=rating</a></p>
+  	<p>The following are valid values to sort by:</p>
+  	<list>
+  		<li>rating</li>
+		<li>genre</li>
+		<li>year</li>
+		<li>title</li>
+	</list>
+</body>
+
+</html>
